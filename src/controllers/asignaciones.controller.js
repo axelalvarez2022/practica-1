@@ -1,7 +1,7 @@
 const Asignaciones = require('../models/asignaciones.model');
 
 
-//ASIGNACIONES DE TODOS
+//ASIGNACIONES DE TODOSsss
 function ObtenerAsignaciones(req, res) {
     Asignaciones.find((err, asignacionEncontrada) => {
         if(err) return res.status(500).send({ mensaje: "Error en la peticion" });
@@ -13,7 +13,7 @@ function ObtenerAsignaciones(req, res) {
         .populate('idAlumno', 'nombre apellido email');
 }
 
-// ASIGNACIONES DE ALUMNO
+// ASIGNACIONES DE ALUMNOssssss
 function ObtenerAsignacionesAlumno(req, res) {
     var idOpcional = req.params.idAlumno
    

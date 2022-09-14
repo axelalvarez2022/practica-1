@@ -2,7 +2,7 @@ const Usuarios = require('../models/usuarios.model');
 const bcrypt = require('bcrypt-nodejs');
 const jwt = require('../services/jwt');
 
-// REGISTRAR AL MAESTRO POR DEFECTO
+// REGISTRAR AL MAESTRO POR DEFECTOdddddd
 
 function RegistrarMaestroDefecto(req, res) {
     var parametros = req.body;
