@@ -11,9 +11,12 @@ function RegistrarMaestroDefecto(req, res) {
 
             usuarioModel.nombre = "MAESTRO";
             usuarioModel.apellido = "Perez";
+            
             usuarioModel.password = "123456";
             usuarioModel.email = "JorgePerez56@kinal.edu.gt";
             usuarioModel.rol = 'ROL_MAESTRO';
+
+
             usuarioModel.imagen = null;
 
             Usuarios.find({ email: "JorgePerez56@kinal.edu.gt"}, (err, usuarioEncontrado) => {
