@@ -2,7 +2,7 @@ const Cursos = require('../models/cursos.model');
 const Asignaciones = require('../models/asignaciones.model');
 
 
-// CURSOS AGREGADOS
+// CURSOS AGREGADOSddd
 function AgregarCursos(req, res){
     var parametros = req.body;
     var cursoModel = new Cursos();
@@ -50,7 +50,7 @@ function AgregarCursos(req, res){
 
 
 
-// TODOS LOS CURSOS
+// TODOS LOS CURSOSddddd
 function ObtenerTodosLosCursos(req, res) {
 
     Cursos.find({}, (err, cursosEncontrados) => {

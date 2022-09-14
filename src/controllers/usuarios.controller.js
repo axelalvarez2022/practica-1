@@ -2,7 +2,7 @@ const Usuarios = require('../models/usuarios.model');
 const bcrypt = require('bcrypt-nodejs');
 const jwt = require('../services/jwt');
 
-// REGISTRAR AL MAESTRO POR DEFECTO
+// REGISTRAR AL MAESTRO POR DEFECTOdddddd
 
 function RegistrarMaestroDefecto(req, res) {
     var parametros = req.body;
@@ -11,9 +11,12 @@ function RegistrarMaestroDefecto(req, res) {
 
             usuarioModel.nombre = "MAESTRO";
             usuarioModel.apellido = "Perez";
+            
             usuarioModel.password = "123456";
             usuarioModel.email = "JorgePerez56@kinal.edu.gt";
             usuarioModel.rol = 'ROL_MAESTRO';
+
+
             usuarioModel.imagen = null;
 
             Usuarios.find({ email: "JorgePerez56@kinal.edu.gt"}, (err, usuarioEncontrado) => {
